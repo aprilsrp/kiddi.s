@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;600;700&display=swap');
+
+body > h1,h2,h3,h4,h5,h6,p,a,button,select,label,input{
+  font-family: 'Kanit', sans-serif !important;
+}
+
+#admin_dashboard{
+  width: calc(100% - 200px) ; 
+  margin-left: 200px ;
+  min-height: 100vh;
+}
+
+#admin_sidebar{
+  width: 200px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100vh;
+  overflow: auto;
+}
+#admin_latest_products{
+  height: 340px;
+  overflow:auto;
+}
+
+.order-i{
+  padding-top: 100%;
+  position: relative;
+  border-radius: 100%;
+}
+.order-i div{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
