@@ -16,6 +16,8 @@ const Cart = React.lazy(() => import('./Pages/Cart/cart'))
 const Customer = React.lazy(() => import('./Pages/Customer/CustomerHandle'))
 const Checkout = React.lazy(() => import('./Pages/Checkout/checkout'))
 const Payment = React.lazy(() => import('./Pages/Payment/payment'))
+const Character = React.lazy(() => import('./Pages/Character/Character'))
+const Matching = React.lazy(() => import('./Pages/Matching/Matching'))
 
 
 function App() {
@@ -64,6 +66,12 @@ function App() {
                 </Route>
                 <Route path="/payment">
                   <Payment />
+                </Route>
+                <Route path="/character">
+                  <Character />
+                </Route>
+                <Route path="/matching">
+                  <Matching/>
                 </Route>
                 <Footer />
               </div>
