@@ -1,27 +1,59 @@
+import { useEffect, useMemo, useState } from "react";
+import Slider from "react-slick";
+import RenderCharacter from "../../components/RenderCharacter/RenderCharacter";
+import React, { Component } from "react";
+function Matching() {
+    const [skin, setSkin] = useState('default')
 
-function Matching(){
-    return(
+    const Model = useMemo(
+        () => {
+            return (
+                <RenderCharacter skin={skin} />
+            )
+        }
+    )
+    return (
+
+
 
         <div ClassName="">
+            <div className="z-40">
+                {Model}
+                <div className="flex justify-center">
+                     <button onClick={() => {
+                        setSkin('https://i.imgur.com/VOSreR4.jpg')
+                        console.log(skin)
+                    }} className="rounded-full h-8 w-8 bg-red-500 m-2 hover:border-2"></button>
+                    <button onClick={() => {
+                        setSkin('https://i.imgur.com/gEYieqh.png')
+                        console.log(skin)
+                    }} className="rounded-full h-8 w-8 bg-green-500 m-2 hover:border-2"></button >
 
-        
-    
-    <div className = "flex justify-center">
-        <h2 className="text-3xl font-bold py-12">MATCHING</h2>
-    </div>
-    
-        
-    <div className="flex justify-center">
-  <div><img src="https://via.placeholder.com/398x500" className="p-10" alt="promo"></img></div>
+                    <button onClick={() => {
+                        setSkin('https://i.imgur.com/Z4Q7nZR.png')
+                        console.log(skin)
+                    }} className="rounded-full h-8 w-8 bg-blue-500 m-2 hover:border-2"></button >
+
+                    <button onClick={() => {
+                        setSkin('https://i.imgur.com/gEYieqh.png')
+                        console.log(skin)
+                    }} className="rounded-full h-8 w-8 bg-yellow-500 m-2 hover:border-2"></button >
+
+                    <button onClick={() => {
+                        setSkin('https://i.imgur.com/Z4Q7nZR.png')
+                        console.log(skin)
+                    }} className="rounded-full h-8 w-8 bg-purple-500 m-2 hover:border-2"></button >
+                </div>
+            </div>
 
 
-    </div>
-    
-    <div className="flex justify-center">
-    <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold  m-2 py-2 px-4 border-b-2 border-blue-700 hover:border-blue-500 rounded focus:bg-yellow-600 group-focus:text-yellow-300  ">TOPS</button>
-    <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold m-2 py-2 px-4 border-b-2 border-blue-700 hover:border-blue-500 rounded focus:bg-yellow-600 group-focus:text-yellow-300 ">PANTS</button>
-    </div>
+            {/* <div className="flex justify-center gap-x-2 m-4">
+                <button onClick={() => {
 
+                }}
+                    className="bg-gray-200 hover:bg-black hover:text-white active:bg-black active:text-white px-4 py-2 rounded-full">TOPS</button>
+                <button className="bg-gray-200 hover:bg-black hover:text-white active:bg-black active:text-white px-4 py-2 rounded-full">PANTS</button>
+            </div> */}
         </div>
     )
-}export default Matching;
+} export default Matching;
