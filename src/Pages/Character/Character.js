@@ -21,19 +21,19 @@ function Character(){
             <div className="p-20">
             <Slider {...settings}>
                 <div>
-                    <img src="https://via.placeholder.com/398x500" className="p-10" alt="promo"></img>
+                    <img src="https://i.imgur.com/THEq4Uu.jpg" className="p-10" alt="promo"></img>
                 </div>
                 <div>
-                    <img src="https://via.placeholder.com/398x500" className="p-10" alt="promo"></img>
+                    <img src="https://i.imgur.com/THEq4Uu.jpg" className="p-10" alt="promo"></img>
                 </div>
                 <div>
-                    <img src="https://via.placeholder.com/398x500" className="p-10" alt="promo"></img>
+                    <img src="https://i.imgur.com/THEq4Uu.jpg" className="p-10" alt="promo"></img>
                 </div>
                 <div>
-                    <img src="https://via.placeholder.com/398x500" className="p-10" alt="promo"></img>
+                    <img src="https://i.imgur.com/THEq4Uu.jpg" className="p-10" alt="promo"></img>
                 </div>
                 <div>
-                    <img src="https://via.placeholder.com/398x500" className="p-10" alt="promo"></img>
+                    <img src="https://i.imgur.com/THEq4Uu.jpg" className="p-10" alt="promo"></img>
                 </div>
                 
             </Slider>
