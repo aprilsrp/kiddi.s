@@ -1,15 +1,10 @@
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-
 import React, { Fragment, Suspense } from 'react'
 import "./App.css";
-
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Nav from "./components/Nav/Nav"
 import Footer from "./components/Footer/Footer"
+
 const Register = React.lazy(() => import('./Pages/Register/Register'))
 const Home = React.lazy(() => import('./Pages/Home/Home'))
 const Login = React.lazy(() => import('./Pages/Login/Login'))
@@ -21,14 +16,14 @@ const Cart = React.lazy(() => import('./Pages/Cart/cart'))
 const Customer = React.lazy(() => import('./Pages/Customer/CustomerHandle'))
 const Checkout = React.lazy(() => import('./Pages/Checkout/checkout'))
 const Payment = React.lazy(() => import('./Pages/Payment/payment'))
-const Character = React.lazy(() => import('./Pages/Character/Character'))
+// const Character = React.lazy(() => import('./Pages/Character/Character'))
 const Matching = React.lazy(() => import('./Pages/Matching/Matching'))
 
 
 function App() {
   return (
     <Fragment>
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></link>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossOrigin="anonymous"></link>
       <Router>
         <div>
           <Suspense fallback="Loading ...">
@@ -40,7 +35,7 @@ function App() {
               </Route>
 
               {/* Costumer */}
-              <div className="container px-32 mx-auto">
+              <div className="container px-2 md:px-16 lg:px-32 mx-auto">
                 <Nav />
                 <Route exact path="/">
                   <Home />
@@ -72,12 +67,12 @@ function App() {
                 <Route path="/payment">
                   <Payment />
                 </Route>
-                <Route path="/character">
+                {/* <Route path="/matching">
+                  <Matching />
+                </Route> */}
+                {/* <Route path="/character">
                   <Character />
-                </Route>
-                <Route path="/matching">
-                  <Matching/>
-                </Route>
+                </Route> */}
                 <Footer />
               </div>
 
